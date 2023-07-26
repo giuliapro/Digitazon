@@ -1,21 +1,97 @@
 body {
     font-family: 'Noto Sans Chorasmian', sans-serif;
     font-family: 'Nunito', sans-serif;
-    margin-left: 80px;
-    margin-right: 80px;
+    margin: 0;
 }
 
 p {
     font-size: 18px;
 }
 
-img {
+h1 {
+    font-size: 34px;
+}
+
+.header { grid-area: header;}
+.img-articolo { grid-area: img-articolo; }
+.introduzione { grid-area: introduzione; }
+.cta { grid-area: cta; }
+.paragrafo1 { grid-area: paragrafo1; }
+.paragrafo2 { grid-area: paragrafo2; }
+.paragrafo3 { grid-area: paragrafo3; }
+.paragrafo4 { grid-area: paragrafo4; }
+
+.header, .img-articolo, .introduzione, .cta, .paragrafo1, .paragrafo2, .paragrafo3, .paragrafo4 {
+    background-color: rgba(0, 179, 255, 0.209);
+    border: 1px solid rgba(60, 169, 223, 0.738);
+    border-radius: 12px;
+    /*margin: 5px;*/
+    padding: 15px;
+}
+
+.parent-grid-1 {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+    grid-gap: 5px;
+    grid-template-areas:
+        "header header header ."
+        "img-articolo introduzione introduzione introduzione"
+        ". cta cta cta";
+}
+
+
+.parent-grid-2 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    grid-gap: 5px;
+    grid-template-areas:
+        "paragrafo1 . paragrafo2"
+        ". paragrafo3 ."
+        "paragrafo4 paragrafo4 paragrafo4";
+}
+
+.thumbnail {
     width: 300px;
-    float: left;
     margin-right: 50px;
     margin-bottom: 50px;
 }
 
-.article {
-    clear: left;
+.nav {
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 179, 255, 0.355);
+}
+
+.logo > img {
+    width: 80px;
+    margin-left: 60px;
+}
+
+.voci ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+    margin-right: 60px;
+}
+
+.voci ul li a {
+    text-decoration:none;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: rgb(56, 156, 233);
+}
+
+.voci ul li a:hover {
+    color: rgb(22, 81, 126);
+    text-decoration:underline;
+}
+
+.voci {
+    width: 500px;
 }
