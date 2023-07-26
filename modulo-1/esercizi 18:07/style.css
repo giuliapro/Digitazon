@@ -1,0 +1,31 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+
+ul li {
+    display: inline;
+}
+
+.menu {
+    display: flex;
+}
+
+.container {
+    display: flex;
+}
+
+.border {
+    border: 1px solid black;
+}
+
+.flex-grow1 {
+    flex-grow: 1;
+    padding-left: 10px;
+}
+
+.flex-grow2 {
+    flex-grow: 2;
+    padding-left: 10px;
+}

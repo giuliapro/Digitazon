@@ -1,0 +1,193 @@
+/* css reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+/*ol, ul {
+	list-style: none;
+}*/
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* il mio css */
+
+h1, h2, h3, h4 {
+    font-family: 'Livvic', sans-serif;
+    margin-bottom: 10px;
+}
+
+h1, h2 {
+    color: #4F5B41;
+}
+
+h3, h4 {
+    color: #4F5B41;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+p, a, li {
+    font-family: 'Poppins', sans-serif;
+    color: #5B3527;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.bold {
+    font-weight:bold;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: #FCF5EE;
+    display: flex;
+    flex-direction: row;
+}
+
+#col1 {
+    width: 33.3%;
+    height: 100vh;
+    background-color: #BDD2A5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#propic {
+    width: 300px;
+}
+
+.wrap-contatti {
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+}
+
+.wrap-contatti h4 {
+    margin-top: 20px;
+}
+
+.wrap-singolo-contatto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.wrap-singolo-contatto p, a {
+    margin-left: 10px;
+}
+
+#col2 {
+    width: 66.6%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.quad-up {
+    width: 49.8%;
+    height: 42vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.quad-down {
+    width: 49.8%;
+    height: 58vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.quad-up h1, h2, h3, h4, p, ul, li {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.quad-down h3, p, img, ul, li {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#quad4 p {
+    margin-bottom: 10px;
+}
+
+.wrap-lingue {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.wrap-competenze, .wrap-comp-linguistiche {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.grid-comp-ling {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.lingue {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dotted-line {
+    width: 1px;
+    border-left: 1px dotted #DF863E;
+}

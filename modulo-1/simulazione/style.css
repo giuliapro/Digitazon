@@ -1,0 +1,278 @@
+body {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul li {
+    list-style: none;
+    cursor: pointer;
+}
+
+li:hover {
+ color:#7DE596;
+ cursor: pointer;
+ transition: 0.2s;
+}
+
+img {
+    border-radius: 4px;
+}
+
+.container-fluid {
+    background: linear-gradient(#898989, #141414);
+    height: 100%;
+    padding-bottom: 80px;
+}
+
+.menu {
+    background-color: #141414;
+    width: 270px;
+    position: fixed;
+    right: 0;
+    height: 100%;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.margin-icon {
+    margin-right: 20px;
+}
+
+.artista {
+    background-image: url("img/cover1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.frecce {
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.frecce:hover>img {
+    cursor: pointer;
+    background-color: rgba(103, 103, 103, 0.381);
+}
+
+.frecce>img {
+    width: 40px;
+    background-color: rgba(133, 133, 133, 0.381);
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.artist-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.verified {
+    display: flex;
+    flex-direction: row;
+    height: 25px;
+}
+
+.info-artista {
+    display: flex;
+    align-items: center;
+}
+
+.info-artista>img {
+    cursor: pointer;
+}
+
+
+.follow {
+    background-color: #7DE596;
+    width: 150px;
+}
+
+.follow:hover {
+    background-color: transparent;
+    border: 1px solid #7DE596;
+}
+
+.canzoni {
+    display: flex;
+    flex-direction: column;
+    align-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.368);
+    border-radius: 16px;
+}
+
+.canzone {
+    display: flex;
+    flex-direction: row;
+    height: 25px;
+}
+
+.canzone>* {
+    margin-left: 10px;
+}
+
+.canzone>p:nth-child(1) {
+    width: 50px;
+}
+
+.canzone>p:nth-child(2) {
+
+    width: 180px;
+}
+
+.canzone>p:nth-child(3) {
+
+    width: 140px;
+}
+
+.canzone>p:nth-child(4) {
+
+    width: 50px;
+}
+
+.canzone>img {
+    margin-left: 20px;
+}
+
+.img-likes>img:nth-child(1) {
+    border-radius: 50%;
+}
+
+.img-likes {
+    position: relative;
+    width: fit-content;
+}
+
+.heart-absolute {
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+}
+
+.card-likes {
+    width: 360px;
+    height: 130px;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.368);
+}
+
+.card-likes:hover {
+    background-color:#7de5958f;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.album-wrap {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.playlist-wrap {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card-album {
+    width: 160px;
+    height: 225px;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-color: rgba(0, 0, 0, 0.368);
+    padding: 10px;
+}
+
+.card-album:hover {
+    background-color:#7de5958f;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.img-album,
+.img-singolo {
+    width: 140px;
+    text-align: center;
+}
+
+.card-singolo {
+    width: 160px;
+    height: 170px;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.368);
+    padding: 10px;
+}
+
+.card-singolo:hover {
+    background-color:#7de5958f;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.discografia {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: linear-gradient(#141414, #898989);
+}
+
+.player {
+    width: 100%;
+    height: 80px;
+    background-color: #0e0e0e;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.song {
+    display: flex;
+    height: 56px;
+    width: 280px;
+}
+
+.testocanzone>p {
+    font-size: 14px;
+}
+
+.testocanzone>p:nth-child(2) {
+    font-size: 10px;
+}
+
+.titolosez {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+    align-items: end;
+}
+
+.titolosez>p {
+    font-size: 12px;
+}
+
+#informazioni {
+    background: url("img/informazionibg1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.informazioni > p {
+    color: rgba(255, 255, 255, 0.696);
+}
+
+.date {
+    background-color: #0e0e0ec1;
+}
