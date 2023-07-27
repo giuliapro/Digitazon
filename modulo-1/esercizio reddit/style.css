@@ -103,7 +103,7 @@ input::placeholder {
 }
 
 .sidebar {
-    height: 100px;
+    height: 120px;
     background-color: rgba(145, 145, 145, 0.15);
     border-radius: 8px;
     border: 1px solid rgba(255, 255, 255, 0.17);
@@ -165,6 +165,16 @@ input::placeholder {
 .premium {
     display: flex;
     align-items: center;
-    background-color: blueviolet;
-    
+
+}
+
+.bottone {
+    display: flex;
+    justify-content: center;
+}
+
+.tryme {
+    width: 90%;
+    background-color: #e82626;
+    border-radius: 15px;
 }
