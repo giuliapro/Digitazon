@@ -1,0 +1,170 @@
+body {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.nav {
+    width: 100%;
+    background-color: rgb(31, 31, 31);
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.logo > img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo {
+    display: flex;
+    width: 160px;
+}
+
+.home a {
+    color: white;
+    text-decoration: none;
+}
+
+.wrapsearch {
+    display: flex;
+    flex-direction: row;
+}
+
+.dropdown > button {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+
+.input-group > input {
+    background-color: rgba(145, 145, 145, 0.15);
+    border: none;
+    color: rgb(255, 255, 255);
+}
+
+input::placeholder {
+    color: rgb(88, 88, 88) !important;
+}
+
+.input-group-text {
+    background-color: rgba(145, 145, 145, 0.15);
+}
+
+.icons {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.advertise {
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(39, 39, 39);
+    border: 1px solid rgba(255, 255, 255, 0.17);
+    border-radius: 8px;
+}
+
+.profile {
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(39, 39, 39);
+    border: 1px solid rgba(255, 255, 255, 0.17);
+    border-radius: 8px;
+}
+
+/**** griglia bootstrap ****/
+
+.container {
+    padding-top: 90px;
+}
+
+.search {
+    height: 60px;
+    background-color: rgba(145, 145, 145, 0.15);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.17);
+}
+
+.box {
+    height: 400px;
+    background-color: rgba(145, 145, 145, 0.15);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.17);
+}
+
+.sidebar {
+    height: 100px;
+    background-color: rgba(145, 145, 145, 0.15);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.17);
+}
+
+.box-aside {
+    height: 250px;
+    background-color: rgba(145, 145, 145, 0.15);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.17);
+}
+
+.filters {
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.icons-article {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.filter {
+    padding-left: 15px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.active {
+    background-color: rgb(39, 39, 39);
+    border: 1px solid rgba(255, 255, 255, 0.17);
+    border-radius: 8px;
+}
+
+.disabled > p {
+    color: rgba(255, 255, 255, 0.307);
+}
+
+.arrow {
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.more {
+    width: 90%;
+    justify-content: space-between;
+}
+
+.more > .filter {
+    padding: 0;
+}
+
+.premium {
+    display: flex;
+    align-items: center;
+    background-color: blueviolet;
+    
+}
