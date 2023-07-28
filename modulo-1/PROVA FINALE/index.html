@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Whatsapp Web</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+
+        <!-- menu a lato: ho cercato di prendere ispirazione da quello di telegram, che mi sembrava più completo -->
+        <div class="row">
+            <div class="col-1 nav">
+                <nav class="nav pt-4 pb-4">
+                    <section class="top">
+                        <div class="profile">
+                            <img src="img/profile.png" alt="">
+                        </div>
+                        <!-- mi piaceva l'idea di poter cambiare il tema velocemente, quindi l'ho inserito a vista -->
+                        <div class="darkmode mt-3">
+                            <label class="toggle-switch">
+                            <input type="checkbox">
+                            <span class="slider"></span>
+                          </label>
+                          <div class="sun-moon">
+                            <i class="fa-regular fa-sun fa-xs" style="color: #ffffffac;"></i>
+                            <p class="small m-1">/</p>
+                            <i class="fa-regular fa-moon fa-xs" style="color: #ffffffac;"></i>
+                          </div>
+                        </div>
+                        <div class="separator m-3"></div>
+                        <div class="chat p-3 selected">
+                            <i class="fa-regular fa-comment fa-lg active" style="color: #ffffff;"></i>
+                            <p class="n-notify">3</p>
+                        </div>
+                        <div class="calls p-3">
+                            <i class="fa-solid fa-phone fa-lg" style="color: #ffffff;"></i>
+                        </div>
+                        <div class="contacts p-3">
+                            <i class="fa-regular fa-address-book fa-lg" style="color: #ffffff;"></i>
+                        </div>
+                        <div class="archive p-3">
+                            <i class="fa-solid fa-box-archive fa-lg" style="color: #ffffff;"></i>
+                        </div>
+                        <div class="star p-3">
+                            <i class="fa-regular fa-star fa-lg" style="color: #ffffff;"></i>
+                        </div>
+                    </section>
+                    <section class="bottom">
+                        <div class="separator m-3"></div>
+                        <div class="story p-3">
+                            <i class="fa-regular fa-circle fa-lg" style="color: rgb(0, 123, 255);"></i>
+                        </div>
+                        <div class="community p-3">
+                            <i class="fa-solid fa-people-group fa-lg" style="color: rgb(0, 123, 255);"></i>
+                        </div>
+                    </section>
+                </nav>
+            </div>
+
+            <!-- lista chat -->
+            <div class="col-4 chatlist">
+                <div class="row new-chat">
+                    <div class="col-10 mt-3 mb-2">
+                        <header class="new-chat">
+                            <div class="title">
+                                <h5>Chat</h5>
+                            </div>
+                    </div>
+                    <div class="col-2 mt-3 mb-2">
+                        <div class="newchat-icons">
+                            <i class="fa-solid fa-file-pen" style="color: #ffffff;"></i>
+                            <i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
+                        </div>
+                    </div>
+                </div>
+                </header>
+                <div class="row">
+                    <div class="col">
+                        <div class="searchbar mt-2">
+                            <div class="input-group rounded">
+                                <input type="search" class="form-control rounded" placeholder="Cerca"
+                                    aria-label="Search" aria-describedby="search-addon" />
+                                <span class="input-group-text border-0" id="search-addon">
+                                    <i class="fas fa-search" style="color: #ffffff;"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col chat-scroll">
+                        <div class="row">
+                            <div class="col">
+                                <article class="single-chat p-2">
+                                    <div class="wrap-info">
+                                        <div class="icon">
+                                            <img src="img/chat1.png" alt="chat icon">
+                                        </div>
+                                        <div class="info">
+                                            <p class="strong">Lorenzo</p>
+                                            <p class="small">Hey, stasera alla fine vieni anche tu?</p>
+                                        </div>
+                                    </div>
+                                    <div class="wrap-time text-center">
+                                        <p class="small active">9:34</p>
+                                        <p class="notification">1</p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <article class="single-chat p-2">
+                                    <div class="wrap-info">
+                                        <div class="icon">
+                                            <img src="img/chat2.png" alt="chat icon">
+                                        </div>
+                                        <div class="info">
+                                            <p class="strong">Marco</p>
+                                            <p class="small">Poi hai guardato la mail?</p>
+                                        </div>
+                                    </div>
+                                    <div class="wrap-time text-center">
+                                        <p class="small active">9:21</p>
+                                        <p class="notification">3</p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <article class="single-chat p-2">
+                                    <div class="wrap-info">
+                                        <div class="icon">
+                                            <img src="img/chat3.png" alt="chat icon">
+                                        </div>
+                                        <div class="info">
+                                            <p class="strong">Greta</p>
+                                            <p class="small">Sì effettivamente ti capisco hahaha</p>
+                                        </div>
+                                    </div>
+                                    <div class="wrap-time text-center">
+                                        <p class="small active">9:05</p>
+                                        <p class="notification">4</p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <article class="single-chat p-2 selected">
+                                    <div class="wrap-info mt-2 mb-2">
+                                        <div class="icon">
+                                            <img src="img/chat4.png" alt="chat icon">
+                                        </div>
+                                        <div class="info">
+                                            <p class="strong">Digitazon</p>
+                                            <p class="small">Alberto: Buon lavoro e buone vacanze!</p>
+                                        </div>
+                                    </div>
+                                    <div class="wrap-time text-center">
+                                        <p class="small mb-4">9:01</p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <article class="single-chat p-2">
+                                    <div class="wrap-info mt-2 mb-2">
+                                        <div class="icon">
+                                            <img src="img/chat5.png" alt="chat icon">
+                                        </div>
+                                        <div class="info">
+                                            <p class="strong">Margherita</p>
+                                            <div class="wrap-check">
+                                                <i class="fa-solid fa-check fa-2xs" style="color: rgb(0, 123, 255)"></i>
+                                                <i class="fa-solid fa-check fa-2xs second-check"
+                                                    style="color: rgb(0, 123, 255)"></i>
+                                                <p class="small">Yesss ci sentiamo dopo allora</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="wrap-time text-center">
+                                        <p class="small mb-4">8:47</p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <article class="single-chat p-2">
+                                    <div class="wrap-info mt-2 mb-2">
+                                        <div class="icon">
+                                            <img src="img/chat6.png" alt="chat icon">
+                                        </div>
+                                        <div class="info">
+                                            <p class="strong">Andrea</p>
+                                            <p class="small">Buonanotte!</p>
+                                        </div>
+                                    </div>
+                                    <div class="wrap-time text-center">
+                                        <p class="small mb-4">1:36</p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <article class="single-chat p-2">
+                                    <div class="wrap-info mt-2 mb-2">
+                                        <div class="icon">
+                                            <img src="img/chat12.png" alt="chat icon">
+                                        </div>
+                                        <div class="info">
+                                            <p class="strong">Stefano</p>
+                                            <div class="wrap-check">
+                                                <i class="fa-solid fa-check fa-2xs" style="color: #ffffff;"></i>
+                                                <i class="fa-solid fa-check fa-2xs second-check"
+                                                    style="color: #ffffff;"></i>
+                                                <p class="small">Ma va tranqui dimmelo pure domani</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wrap-time text-center">
+                                        <p class="small mb-4">Ieri</p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <article class="single-chat p-2">
+                                    <div class="wrap-info mt-2 mb-2">
+                                        <div class="icon">
+                                            <img src="img/chat7.png" alt="chat icon">
+                                        </div>
+                                        <div class="info">
+                                            <p class="strong">Camilla</p>
+                                            <p class="small">Hahahah</p>
+                                        </div>
+                                    </div>
+                                    <div class="wrap-time text-center">
+                                        <p class="small mb-4">Ieri</p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <article class="single-chat p-2">
+                                    <div class="wrap-info mt-2 mb-2">
+                                        <div class="icon">
+                                            <img src="img/chat8.png" alt="chat icon">
+                                        </div>
+                                        <div class="info">
+                                            <p class="strong">Sara</p>
+                                            <div class="wrap-check">
+                                                <i class="fa-solid fa-check fa-2xs"
+                                                    style="color: rgb(0, 123, 255);"></i>
+                                                <i class="fa-solid fa-check fa-2xs second-check"
+                                                    style="color: rgb(0, 123, 255)"></i>
+                                                <p class="small">No problem!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wrap-time text-center">
+                                        <p class="small mb-4">Ieri</p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <article class="single-chat p-2">
+                                    <div class="wrap-info mt-2 mb-2">
+                                        <div class="icon">
+                                            <img src="img/chat9.png" alt="chat icon">
+                                        </div>
+                                        <div class="info">
+                                            <p class="strong">Mamma</p>
+                                            <div class="wrap-check">
+                                                <i class="fa-solid fa-check fa-2xs"
+                                                    style="color: rgb(0, 123, 255);"></i>
+                                                <i class="fa-solid fa-check fa-2xs second-check"
+                                                    style="color: rgb(0, 123, 255)"></i>
+                                                <p class="small">Sisi torno per cena</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wrap-time text-center">
+                                        <p class="small mb-4">Ieri</p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <article class="single-chat p-2">
+                                    <div class="wrap-info mt-2 mb-2">
+                                        <div class="icon">
+                                            <img src="img/chat10.png" alt="chat icon">
+                                        </div>
+                                        <div class="info">
+                                            <p class="strong">Carlo</p>
+                                            <p class="small">No non credo</p>
+                                        </div>
+                                    </div>
+                                    <div class="wrap-time text-center">
+                                        <p class="small mb-4">Mercoledì</p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <article class="single-chat p-2">
+                                    <div class="wrap-info mt-2 mb-2">
+                                        <div class="icon">
+                                            <img src="img/chat11.png" alt="chat icon">
+                                        </div>
+                                        <div class="info">
+                                            <p class="strong">Matteo</p>
+                                            <div class="wrap-check">
+                                                <i class="fa-solid fa-check fa-2xs" style="color: #ffffff;"></i>
+                                                <i class="fa-solid fa-check fa-2xs second-check"
+                                                    style="color: #ffffff;"></i>
+                                                <p class="small">Eh no infatti, immaginavo</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wrap-time text-center">
+                                        <p class="small mb-4">Giovedì</p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            <!-- chat aperta -->
+            </div>
+            <div class="col-7 opened-chat">
+                <div class="row banner-chat">
+                    <div class="col-10 mt-3 mb-2">
+                        <header class="banner-chat">
+                            <div class="icongroup">
+                                <img src="img/chat4.png" alt="chat icon">
+                            </div>
+                            <div class="title">
+                                <h6>Digitazon</h6>
+                                <p class="xsmall">Alberto, Bryan, Caroline, Dejvi, Erik, Gabriele, Mirza, Riccardo</p>
+                            </div>
+                    </div>
+                    <div class="col-1 mt-3 mb-2">
+                        <div class="currentchat-icons">
+                            <i class="fa-solid fa-phone" style="color: #ffffff;"></i>
+                            <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+
+                        </div>
+                    </div>
+                    <div class="col-1 x">
+                        <i class="fa-solid fa-x fa-lg" style="color: #ffffff;"></i>
+                        <!-- Ho aggiunto questa X alla UI perché mi sono accorta che su whatsapp web non c'è la possibilità di chiudere le chat una volta che ne hai aperta una. Questo porta ad un sacco di messaggi visulizzati senza volerlo!! :( -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col inner-chat">
+                        <article>
+                            <article class="wrap-messages mb-2">
+                                <div class="day pt-2 pb-2">
+                                    <p>Oggi</p>
+                                </div>
+                                <div class="wrap-inner-message">
+                                    <div class="icongroup mb-1">
+                                        <img src="img/user.png" alt="chat icon">
+                                    </div>
+                                    <article class="user-messages">
+                                        <div class="full-message 1 p-2 mt-2">
+                                            <div class="row">
+                                                <div class="col-11">
+                                                    <p class="small">L'esercizio é scrivere HTML e CSS per riprodurre
+                                                        l'interfaccia grafica di WhatsApp Web:<br>
+                                                        - Utilizzate la tecnologia che preferite per raggiungere
+                                                        l'obiettivo<br>
+                                                        - Inviate il risultato come preferite (zippato, codepen, URL
+                                                        GitHub, ...) alla mia email:
+                                                        alberto.zaccagni@digitazon.school<br>
+                                                        - Orario di inizio 9:30, orario di fine 17</p>
+                                                </div>
+                                                <div class="col-1 time">
+                                                    <p class="small">9:00</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="full-message 2 p-2 mt-1">
+                                            <div class="row">
+                                                <div class="col-11">
+                                                    <p class="small">Buon lavoro e buone vacanze!</p>
+                                                </div>
+                                                <div class="col-1 time">
+                                                    <p class="small">9:01</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </article>
+                                </div>
+                            </article>
+                        </article>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col box-message">
+                        <div class="send-icon">
+                            <i class="fa-solid fa-plus fa-lg" style="color: #ffffff;"></i>
+                        </div>
+                        <div class="input-group rounded text-mex">
+                            <input type="text" class="form-control rounded" aria-label="Text"
+                                aria-describedby="search-addon" />
+                            <span class="icons-message">
+                                <i class="fa-solid fa-face-smile" style="color: #ffffff;"></i>
+                                <i class="fa-solid fa-note-sticky" style="color: #ffffff;"></i>
+                            </span>
+                        </div>
+                        <div class="send-icon">
+                            <i class="fa-solid fa-microphone fa-lg" style="color: #ffffff;"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
