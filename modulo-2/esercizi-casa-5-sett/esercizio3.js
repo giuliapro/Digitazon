@@ -4,19 +4,19 @@
 // piu' grande presente nell'array
 
 function func(arr) {
-    let arr2 = []
-    let min = 1
-    let max = 1
-    for (let i = 0; i < arr.length; i++) {
-        let current = arr[i]
-        if (current <= min) {
-            min = current
-        } else if (current > max) {
-            max = current
+    let arr2 = [] // creo un arr2 vuoto
+    let min = 0 // creo la variabile min
+    let max = 0 // creo la variabile max 
+    for (let i = 0; i < arr.length; i++) { // per ogni elemento di arr
+        let current = arr[i] // creo la variabile col valore corrente
+        if (current <= min) { // se questo valore è <= a min,
+            min = current // min diventa uguale a current
+        } else if (current > max) { // altrimenti, se questo valore è > di max,
+            max = current // max diventa uguale a current
         }  
     }
-    arr2.push(min, max)
-    return arr2
+    arr2.push(min, max) // una volta ottenuti i miei valori finali, pusho
+    return arr2 // ritorno arr2
 }
 
-console.log(func([1,2,3,4,5]))
+console.log(func([0,1,2,3,4,5]))
