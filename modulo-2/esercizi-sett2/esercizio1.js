@@ -17,3 +17,5 @@ for (let i = 0; i < string.length; i++) {
         // allora deve comportardi così
     }  
 }
+
+console.log(occurrencies)
