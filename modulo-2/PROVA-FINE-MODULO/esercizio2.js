@@ -13,7 +13,6 @@
 
 // PSEUDOCODICE
 // creo una funzione che accetta una stringa in ingresso
-// creo variabile booleana pazzia
 // con il costrutto if imposto le condizioni per le eccezioni di pazzia
 // con il costrutto if imposto le condizioni per la stringa pazza
 
@@ -23,26 +22,32 @@
 // endsWith(): mi dice con cosa finisce la stringa
 // split(): mi divide una stringa in sottostringhe usando il carattere che voglio
 
+
+function strIncludes(str, parole) {
+    for (let i = 0; i < parole.length; i++) {
+        let parolaCorrente = parole[i]
+        if (str.includes(parolaCorrente)) {
+            return true
+        }
+    }
+    return false
+}
+
+
 function isPazza(str) {
 
     // inizio a definire le eccezioni perché sennò verrebbero sovrascritte
 
     // controllo se la stringa contiene uno dei soggetti validi
     let soggettiValidi = ["Lui", "Lei", "Egli", "Ella"]
-    for (let i = 0; i < soggettiValidi.length; i++) {
-        let soggettoCorrente = soggettiValidi[i]
-        if (str.includes(soggettoCorrente)) {
-            return false
-        }
+    if (strIncludes(str, soggettiValidi)) {
+        return false
     }
 
     // controllo se la stringa contiene parole proibite
     let paroleProibite = ["Church", "mare"]
-    for (let i = 0; i < paroleProibite.length; i++) {
-        let parolaCorrente = paroleProibite[i]
-        if (str.includes(parolaCorrente)) {
-            return false
-        }
+    if (strIncludes(str, paroleProibite)) {
+        return false
     }
 
     // controllo se la stringa inizia con una punteggiatura
@@ -77,6 +82,8 @@ function isPazza(str) {
         }
     }
 
+    return false
+
 }
 
 
@@ -85,3 +92,4 @@ console.log(isPazza("Andare a rimirare")) // true
 console.log(isPazza("Lui e' pazzo.")) // false
 console.log(isPazza("~ Pensava sempre al mare come a la mar, come lo chiamano in spagnolo quando lo amano")) // false
 console.log(isPazza("~ Papa', come sta Church? ~")) // false
+console.log(isPazza('ciao')) // false
