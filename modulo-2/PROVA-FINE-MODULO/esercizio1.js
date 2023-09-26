@@ -83,7 +83,7 @@ console.log(sommaSpesa('Cancelleria 500 40 60 Servizi igienici 1000 1 200 Vendit
 // pusho tutto nell'array
 
 function sommaSingoloReparto(str) {
-    let substring = str.split(' ') // metodo per suddividere le stringhe tramite seprataore specificato
+    let substring = str.split(' ') // metodo per suddividere le stringhe tramite separataore specificato
     let nomeReparto
     let importo = 0
 
