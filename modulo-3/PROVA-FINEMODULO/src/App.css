@@ -1,0 +1,129 @@
+.App-header {
+  background-color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: black;
+}
+
+.page-wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.button{
+  border-radius: 8px;
+  border: none;
+  padding: 10px;
+  background-color: #a7a7a7;
+  cursor: pointer;
+}
+
+/** menu **/
+
+.menu {
+  height: 80px;
+  width: 100%;
+  background-color: rgb(238, 238, 238);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu__logo {
+  width: 100px;
+}
+
+.menu__cart, .menu__profile {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu__nav {
+  display: flex;
+  justify-content: space-around;
+  width: 300px;
+}
+
+/** sidebar **/
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.category-list {
+  background-color: rgb(204, 204, 204);
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+/** products **/
+
+.main {
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+
+.products-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.single-product {
+  width: 450px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(227, 227, 227);
+  margin: 10px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.single-product-cart {
+  width: 170px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(204, 204, 204);
+  margin: 10px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.img-product {
+  width: 150px;
+}
+
+.product-cart {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.img-product-cart {
+  width: 80px;
+}
+
+.cart {
+  background-color: rgb(227, 227, 227);
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

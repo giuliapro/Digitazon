@@ -1,0 +1,44 @@
+:root {
+  background-color: #272727;
+  min-height: 100vh;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+}
+
+.sidebar {
+  grid-column: 1;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+}
+
+.post {
+  grid-column: 2 / 4;
+  border: 1px solid white;
+  border-radius: 16px;
+  padding: 20px;
+  overflow-y: scroll;
+}
+
+.single-post-nav {
+  border: 1px solid white;
+  border-radius: 16px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}

@@ -1,0 +1,35 @@
+li:nth-child(2n+0) {
+    text-decoration: underline;
+}
+
+strong:nth-child(2n) {
+    font-style: italic;
+}
+
+p i:hover {
+    color: gold;
+    font-weight: bold;
+}
+
+p span {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    border-radius: 2px;
+    padding: 1px 4px;
+    background-color: #f8f9fa;
+    color: #000000;
+    border: 1px solid #eaecf0;
+}
+
+span+cite {
+    font-weight: bold;
+}
+
+.lorem {
+    margin: 20px;
+    padding: 10px;
+}
+
+.lorem:hover {
+    background-color: red;
+}

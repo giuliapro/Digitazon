@@ -1,0 +1,86 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #2e2e2e;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* font-size: calc(10px + 2vmin); */
+  color: white;
+}
+
+/* css paridispari */
+
+.wrapper {
+  display: flex;
+}
+
+.left {
+  background-color: blueviolet;
+}
+
+.right {
+  background-color: blue;
+}
+
+/* css chart */
+
+/* h2 {
+  font-size: 40px;
+} */
+
+.chart-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  align-items: center;
+  background-color: #3e3e3e;
+  border-radius: 16px;
+  margin: 10px;
+}
+
+.match {
+  display: flex;
+  flex-direction: column;
+}
+
+.team {
+  width: 170px;
+  height: 170px;
+  background-color: black;
+  border-radius: 16px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 40px;
+  align-items: center;
+}
+
+/* css alarm */
+
+.alarm-input {
+  display: flex;
+}
+
+.input-style {
+  width: 30px;
+}
+
+/* css mathcalc */
+
+.wrapper-calc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  padding: 50px;
+  margin-top: 10px;
+  background-color: rgba(0, 0, 0, 0.301);
+  border-radius: 16px;
+}

@@ -1,0 +1,20 @@
+{
+  "name": "server1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon --watch index.js index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "install": "^0.13.0",
+    "node-modules": "^1.0.1",
+    "nodemon": "^3.0.1",
+    "undici": "^5.27.0"
+  }
+}

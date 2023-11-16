@@ -1,0 +1,269 @@
+:root {
+  --color-blue: #0b132b;
+  --color-fucsia: #ff3d81;
+  --color-gray: #333333;
+  --color-black: #191414;
+  --color-green: #1DB954;
+  --color-white: #f7f7f7;
+}
+
+* {
+  list-style-type: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-decoration: none;
+  color: white;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  background-color: var(--color-black);
+  color: white;
+}
+
+header {
+  height: 6vh;
+  border-bottom: 1px groove rgb(43, 211, 74);
+}
+
+header img {
+  width: 200px;
+  padding: 15px;
+}
+
+.menu-nav {
+  display: flex;
+  height: 100vh;
+}
+
+.menu-nav nav {
+  padding: 1em;
+  background-color: var(--color-gray);
+  overflow: auto;
+  width: 350px;
+}
+
+nav::-webkit-scrollbar-track {
+  background-color: black;
+  /* Cor da trilha da barra de rolagem */
+}
+
+.playlist-card {
+  display: grid;
+  border: 1px solid var(--color-black);
+  border-radius: 15px;
+  margin: 7px;
+  gap: 30px;
+  justify-content: space-between;
+  align-items: center;
+  grid-template-columns: 40px auto 60px;
+  background-color: var(--color-black);
+  box-shadow: -1px 1px 4px rgb(37, 37, 37);
+}
+
+.playlist-card-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px black;
+}
+
+.playlist-card h2 {
+  margin: 0;
+  text-align: left;
+  font-size: 1.5em;
+}
+
+.play-icon {
+  color: var(--color-white);
+  background-color: var(--color-green);
+  border-radius: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8em;
+  padding: .2rem;
+  width: 50px;
+}
+
+
+
+.details {
+
+  flex: 1;
+  flex-direction: column;
+  background: rgb(25, 20, 20);
+  background: linear-gradient(0deg, rgba(25, 20, 20, 1) 29%, rgba(11, 19, 43, 1) 100%);
+  height: 90vh;
+  overflow: auto;
+}
+
+.hero {
+  padding: 5em;
+  display: flex;
+  gap: 3em;
+  align-items: center;
+  height: 50%;
+  padding-bottom: 2em;
+
+}
+
+.hero img {
+  width: 30%;
+
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.hero-content h1 {
+  font-size: 5em;
+  font-weight: bold;
+  text-shadow: #191414;
+  text-shadow: 1px 1px 3px rgb(189, 189, 189);
+}
+
+.hero-content .des {
+  font-size: 1em;
+
+}
+
+.details ul {
+  margin-top: 2em;
+  display: grid;
+  padding: 0 3em;
+}
+
+.details li {
+  display: grid;
+  grid-template-columns: 40px 50px 300px auto 150px 50px;
+  padding: .5em 1em;
+  text-align: left;
+  margin-bottom: .5em;
+  cursor: pointer;
+  align-items: center;
+}
+
+.details li:hover {
+  box-shadow: 5px 5px 5px #383636a5, -3px -5px 5px #1c1b1ba5;
+}
+
+.details li img {
+  height: 40px;
+}
+
+.details li p {
+  font-size: 1.3em;
+}
+
+.player {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--color-green);
+  height: 10vh;
+  box-shadow: 1px 1px 3px black;
+  display: flex;
+  align-items: center;
+}
+
+.player audio {
+  margin-left: 400px;
+  width: 500px;
+}
+
+
+.player-info {
+  justify-content: center;
+  gap: 1em;
+  margin-left: 50px;
+}
+
+.music-player {
+  margin-left: 200px;
+}
+
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.control-icon {
+  background-color: var(--color-black);
+  border: none;
+  padding: .5em;
+  border-radius: 50px;
+}
+
+#progressBar {
+  width: 700px;
+}
+
+.player-controls {
+  display: flex;
+  gap: .5em;
+  justify-content: center;
+  font-size: 1.5em;
+}
+
+.player-controls button {
+  background-color: rgb(0, 0, 0);
+  font-size: 17px;
+}
+
+.progress {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin: 19px 5px 10px;
+}
+
+.input-login {
+  color: black;
+  margin-top: 30px;
+  padding: 5px;
+  border-radius: 8px;
+  width: 100%;
+  border: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.button-login:hover {
+  background-color: #1DB954;
+  color: #f7f7f7;
+}
+
+.wrapper-login {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  background-color: rgb(68, 68, 68);
+  border-radius: 16px;
+}
+
+h2 {
+  font-size: 34px;
+}
+
+.spotify-header {
+  height: 80px;
+}

@@ -1,0 +1,135 @@
+{
+    "playlists": [
+        {
+            "artist": "Eminem",
+            "description": "Eminem, pseudonimo di Marshall Bruce Mathers III, è un rapper, produttore discografico e attore statunitense. Considerato uno dei migliori artisti hip hop di sempre, è cresciuto a Detroit, dove è stato scoperto nel 1997 da Dr. Dre, noto rapper e produttore discografico.",
+            "playlistname": "Top Songs",
+            "playlistdescription": "Top songs of the Discography of Eminem through 1997 to todays",
+            "image": "https://ongpng.com/wp-content/uploads/2023/01/11.eminem_1800x1200-1.png",
+            "songs": [
+                {
+                    "songname": "Spacebound",
+                    "time": "264",
+                    "mp3Url": "https://nghype.com/wp-content/uploads/2023/07/Eminem-Space-Bound-Nghype.Com_.mp3"
+                },
+                {
+                    "songname": "Mockingbird",
+                    "time": "257",
+                    "mp3Url": "https://nghype.com/wp-content/uploads/2023/07/Eminem-Mockingbird-Nghype.Com_.mp3"
+                },
+                {
+                    "songname": "Beautiful",
+                    "time": "252",
+                    "mp3Url": "https://nghype.com/wp-content/uploads/2023/07/Eminem-Beautiful-Nghype.Com_-1.mp3"
+                },
+                {
+                    "songname": "Not Afraid",
+                    "time": "258",
+                    "mp3Url": "https://nghype.com/wp-content/uploads/2023/07/Eminem-Not-Afraid-Nghype.Com_.mp3"
+                },
+                {
+                    "songname": "No Love",
+                    "time": "315",
+                    "mp3Url": "https://nghype.com/wp-content/uploads/2023/07/Eminem-Ft-Lil-Wayne-Famno-Love-Nghype.Com_.mp3"
+                }
+            ]
+        },
+        {
+            "artist": "Bruno Mars",
+            "description": "Bruno Mars, pseudonimo di Peter Gene Hernandez, è un cantautore e produttore discografico statunitense. Il suo ispiratore musicale è Michael Jackson e diversi critici riscontrano in Mars numerose analogie nel timbro vocale e nella versatilità dei generi musicali in cui si identifica.",
+            "playlistname": "Doo-Wops & Hooligans",
+            "playlistdescription": "Doo-Wops & Hooligans è il primo album in studio del cantautore statunitense Bruno Mars, pubblicato il 4 ottobre 2010 dalla Atlantic/Elektra.",
+            "image": "https://www.pngplay.com/wp-content/uploads/6/Singer-Bruno-Mars-No-Background.png",
+            "songs": [
+                {
+                    "songname": "Just the Way You Are",
+                    "time": "236",
+                    "mp3Url": "https://files.gospeljingle.com/uploads/music/2023/01/Bruno_Mars_-_Just_the_Way_You_Are.mp3"
+                },
+                {
+                    "songname": "Grenade",
+                    "time": "222",
+                    "mp3Url": "https://zamona.net/storage/music/4728.mp3"
+                },
+                {
+                    "songname": "Talking to the Moon",
+                    "time": "214",
+                    "mp3Url": "https://www.ceenaija.com/wp-content/uploads/music/2021/05/Bruno_Mars_-_Talking_To_The_Moon_CeeNaija.com_.mp3"
+                },
+                {
+                    "songname": "The Lazy Song",
+                    "time": "190",
+                    "mp3Url": "https://www.hitstreet.net/wp-content/uploads/filebase/Bruno_Mars_-_The_Lazy_Song.mp3"
+                }
+            ]
+        },
+        {
+            "artist": "Daft Punk",
+            "description": "I Daft Punk sono stati un gruppo musicale francese di musica elettronica fondato dai parigini Guy-Manuel de Homem-Christo e Thomas Bangalter.",
+            "playlistname": "Random Access Memories",
+            "playlistdescription": "Random Access Memories è il quarto album in studio del gruppo musicale francese Daft Punk, pubblicato il 17 maggio 2013 dalla Columbia Records.",
+            "image": "https://freepngimg.com/save/36460-daft-punk-transparent-image/1024x724",
+            "songs": [
+                {
+                    "songname": "Get Lucky",
+                    "time": "248",
+                    "mp3Url": "https://zamona.net/storage/music/44859.mp3"
+                },
+                {
+                    "songname": "Instant Crush",
+                    "time": "337",
+                    "mp3Url": "https://flexyokayfile.xyz/mp32023/05/Daft_Punk_-_Instant_Crush_feat_Julian_Casablancas__FlexyOkay.com.mp3"
+                },
+                {
+                    "songname": "Contact",
+                    "time": "323",
+                    "mp3Url": "https://flexyokayfile.xyz/mp32023/05/Daft_Punk_-_Contact_FlexyOkay.com.mp3"
+                },
+                {
+                    "songname": "Fragments of Time",
+                    "time": "279",
+                    "mp3Url": "https://flexyokayfile.xyz/mp32023/03/Daft_Punk_-_Fragments_of_Time_feat_Todd_Edwards__FlexyOkay.com.mp3"
+                },
+                {
+                    "songname": "Give Life Back to Music",
+                    "time": "275",
+                    "mp3Url": "https://flexyokayfile.xyz/mp32023/05/Daft_Punk_-_Give_Life_Back_to_Music_FlexyOkay.com.mp3"
+                }
+            ]
+        },
+        {
+            "artist": "Bob Marley",
+            "description": "Bob Marley, nato Robert Nesta Marley, è stato un cantautore, chitarrista e attivista giamaicano. Ha contribuito a sviluppare e diffondere in tutto il mondo uno stile di vita generalmente identificato con la musica reggae, che peraltro lo rese popolare fuori dalla Giamaica.",
+            "playlistname": "Bob Marley Greatest Hits",
+            "playlistdescription": "A collection of the greatest hits of the Kingston Legend Bob Marley",
+            "image": "https://i.pinimg.com/originals/43/18/33/4318332edec1c81040b86a2d5fba6580.png",
+            "songs": [
+                {
+                    "songname": "One Love",
+                    "time": "173",
+                    "mp3Url": "https://nghype.com/wp-content/uploads/2022/08/Bob-Marley-one-luv.mp3"
+                },
+                {
+                    "songname": "Redemption Song",
+                    "time": "226",
+                    "mp3Url": "https://www.hitstreet.net/wp-content/uploads/filebase/Bob_Marley_The_Wailers_-_Redemption_Song.mp3"
+                },
+                {
+                    "songname": "No Woman No Cry",
+                    "time": "244",
+                    "mp3Url": "https://nghype.com/wp-content/uploads/2022/08/BOB-MARLEY-NO-WOMAN-NO-CRY.mp3"
+                },
+                {
+                    "songname": "Buffalo Soldier",
+                    "time": "257",
+                    "mp3Url": "https://ht-files.com/wp-content/uploads/2023/05/Bob-Marley-The-Wailers-Buffalo-Soldier.mp3"
+                },
+                {
+                    "songname": "I shot the sheriff",
+                    "time": "281",
+                    "mp3Url": "https://www.swiftloaded.com/mp3-dl/file/Bob-Marley-The-Wailers-I-Shot-The-Sheriff.mp3"
+                }
+            ]
+        }
+    ]
+}
